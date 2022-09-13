@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "O2R", "O2R.esproj", "{B79927BF-3969-4912-BAE9-9DFFC719B632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B79927BF-3969-4912-BAE9-9DFFC719B632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79927BF-3969-4912-BAE9-9DFFC719B632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79927BF-3969-4912-BAE9-9DFFC719B632}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B79927BF-3969-4912-BAE9-9DFFC719B632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79927BF-3969-4912-BAE9-9DFFC719B632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79927BF-3969-4912-BAE9-9DFFC719B632}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10CCC3AB-B51F-4F93-A448-E62B744293F8}
+	EndGlobalSection
+EndGlobal

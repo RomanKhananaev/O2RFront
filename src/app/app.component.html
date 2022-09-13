@@ -1,0 +1,53 @@
+<div class="RomanContainer">
+  <div [class.loading]="loading" class="RomanFlexBox">
+    <h3 class="RomanTitle">Star wars players</h3>
+    <!--<div *ngFor="let player of loadedPlayers">
+      <div class="RomanCard">
+        <strong>Name: </strong> {{player.name}}
+        <br />
+        <strong>Birthday: </strong> {{player.birth_year}}
+        <br />
+        <strong>Gender: </strong> {{player.gender}}
+        <br />
+        <strong>Height: </strong> {{player.height}}
+        <br />
+        <strong>Mass: </strong> {{player.mass}}
+        <br />
+      </div>
+    </div>-->
+    <div *ngFor="let player of loadedPlayers">
+      <div class="RomanCard" (click)="showDetails(player)">{{player.name}}</div>
+    </div>
+    <div class="pagination">
+      <a href="#" (click)="showPagePlayers(currentPage-1)">&laquo;</a>
+      <a [class.active]="currentPage==1" href="#" (click)="showPagePlayers(1)">1</a>
+      <a [class.active]="currentPage==2" href="#" (click)="showPagePlayers(2)">2</a>
+      <a [class.active]="currentPage==3" href="#" (click)="showPagePlayers(3)">3</a>
+      <a [class.active]="currentPage==4" href="#" (click)="showPagePlayers(4)">4</a>
+      <a [class.active]="currentPage==5" href="#" (click)="showPagePlayers(5)">5</a>
+      <a [class.active]="currentPage==6" href="#" (click)="showPagePlayers(6)">6</a>
+      <a href="#" (click)="showPagePlayers(currentPage+1)">&raquo;</a>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="popupVisible" class="popup">
+  <div>
+    <h2>Player info</h2>
+    <strong>Name: </strong> {{playerDetails.name}}<br />
+    <strong>Height: </strong> {{playerDetails.height}}<br />
+    <strong>Mass: </strong> {{playerDetails.mass}}<br />
+    <strong>Gender: </strong> {{playerDetails.gender}}<br /><br />
+    <strong>Movies</strong>
+    <ul *ngIf="!loading">
+      <li *ngFor="let movie of playerMovies">{{movie}}</li>
+    </ul>
+
+
+    <br />
+    <button class="button" (click)="closeDetails()">Close</button>
+  </div>
+
+</div>
+

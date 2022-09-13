@@ -1,0 +1,113 @@
+.RomanContainer {
+  margin: auto;
+  width: 60%;
+}
+
+.RomanFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.RomanTitle {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 50px;
+  background-color: orange;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:10px 0 10px 0;
+}
+.loading{
+    display:none;
+}
+.RomanCard {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+  .RomanCard:hover {
+    background-color: red;
+  }
+
+
+.pagination {
+    margin-top:20px;
+  display: inline-block;
+}
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+
+    .pagination a.active {
+      background-color: orange;
+      color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+      background-color: red;
+    }
+
+    .pagination a:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .pagination a:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+
+.popup {
+  cursor: pointer;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 20%;
+  left:40%;
+  z-index: 10000;
+  background-color: #fff;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  height: auto;
+  max-width: 10%;
+  vertical-align: middle;
+  width: 60%;
+  border-radius: 8px;
+  padding: 15px 5%;
+}
+
+.button {
+  background-color: orange; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:12px;
+}
+ul {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
